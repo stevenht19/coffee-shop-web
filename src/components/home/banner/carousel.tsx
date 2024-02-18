@@ -2,10 +2,10 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, EffectFade } from 'swiper/modules'
+import { CarouselImage } from './carousel-section'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-fade'
-import { CarouselImage } from './carousel-section'
 
 export const Caroucel: React.FC = () => {
   return (
@@ -13,13 +13,13 @@ export const Caroucel: React.FC = () => {
       color='red'
       direction='vertical'
       effect='fade'
-      className='w-full h-[40rem] lg:h-[65rem] mySwiper'
+      className='w-full h-[45rem] xl:h-[55rem] mySwiper'
       modules={[Pagination, EffectFade]}
       pagination={{
         clickable: true,
         renderBullet(_, className) {
           return (`
-            <span class='${className}' style='border:1px solid #fff;'>
+            <span class='${className}' style='border:1px solid #fff;margin-right:1rem;width:.65rem;height:0.65rem;'>
             </span>
           `)
         }

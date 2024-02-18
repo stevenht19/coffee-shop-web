@@ -1,11 +1,15 @@
-import { Caroucel } from '@components/home/carousel'
-import { Header } from '@components/home/header'
+import { Caroucel } from '@components/home/banner'
+import { History } from '@components/home/history'
+import { OurServices } from '@components/home/services'
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <Caroucel />
+      <header>
+        <Caroucel />
+      </header>
+      <History />
+      <OurServices />
     </>
   )
 }
