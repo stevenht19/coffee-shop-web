@@ -1,0 +1,33 @@
+@keyframes lineAnimation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome::before, .welcome::after {
+  content: '';
+  position: absolute;
+  z-index: 30;
+  width: .15rem;
+  background-color: #8F7838;
+  height: 4.8rem;
+  opacity: 0;
+}
+
+.welcome::before {
+  top: 120%;
+  transform: translateY(-2rem);
+  animation: lineAnimation 1s forwards;
+  animation-delay: 0.4s;
+  animation-name: lineAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.welcome::after {
+  bottom: 120%;
+  transform: translateY(1.5rem);
+  animation-name: lineAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}

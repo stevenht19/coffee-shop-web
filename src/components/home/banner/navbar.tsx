@@ -1,33 +1,36 @@
 import { Logo } from '@components/ui/logo'
+import Link from 'next/link'
 
 export const Navbar = () => {
   return (
-    <div className='static xl:absolute top-0 z-40 mt-3 w-full'>
-      <nav className='flex justify-between text-white items-center max-w-3xl mx-auto font-thin'>
-        <ul className='flex gap-10'>
-          <li>
-            HOME
-          </li>
-          <li>
-            HISTORY
-          </li>
-          <li>
-            SERVICES
-          </li>
-        </ul>
+    <nav className='flex justify-between text-white items-center max-w-4xl mx-auto'>
+      <ul className='flex gap-10'>
+        <li>
+          HOME
+        </li>
+        <li>
+          HISTORY
+        </li>
+        <li>
+          SERVICES
+        </li>
+      </ul>
+      <Link href={'/'}>
         <Logo />
-        <ul className='flex gap-10'>
-          <li>
-            DELIVERY
-          </li>
-          <li>
+      </Link>
+      <ul className='flex gap-10'>
+        <li>
+          DELIVERY
+        </li>
+        <li>
+          <Link href={'/menu'}>
             MENU
-          </li>
-          <li>
-            CONTACT
-          </li>
-        </ul>
-      </nav>
-    </div>
+          </Link>
+        </li>
+        <li>
+          CONTACT
+        </li>
+      </ul>
+    </nav>
   )
 }

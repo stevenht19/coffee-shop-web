@@ -1,7 +1,7 @@
-import type { Metadata } from "next"
-import { Playfair_Display, Open_Sans } from "next/font/google"
+import type { Metadata } from 'next'
+import { Playfair_Display, Open_Sans } from 'next/font/google'
 import { Footer } from '@layout/footer'
-import "./globals.css"
+import './globals.css'
 
 export const sans = Open_Sans({
   subsets: ['latin'],

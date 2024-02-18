@@ -15,7 +15,7 @@ export const Service: React.FC<ServiceCardProps> = ({
         </figcaption>
       </figure>
       <h3 className='text-primary'>WHY CHOOSE US?</h3>
-      <p className='mt-2 text-gray-300 font-thin mb-4'>Because we are reliable</p>
+      <p className='mt-2 text-neutral-300 font-thin mb-4'>Because we are reliable</p>
       <Text>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa veniam fuga animi repudiandae, dolore blanditiis, iste quaerat neque dicta.
       </Text>

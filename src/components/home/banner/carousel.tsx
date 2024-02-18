@@ -9,28 +9,30 @@ import 'swiper/css/effect-fade'
 
 export const Caroucel: React.FC = () => {
   return (
-    <Swiper
-      color='red'
-      direction='vertical'
-      effect='fade'
-      className='w-full h-[45rem] xl:h-[55rem] mySwiper'
-      modules={[Pagination, EffectFade]}
-      pagination={{
-        clickable: true,
-        renderBullet(_, className) {
-          return (`
-            <span class='${className}' style='border:1px solid #fff;margin-right:1rem;width:.65rem;height:0.65rem;'>
-            </span>
+    <header>
+      <Swiper
+        color='red'
+        direction='vertical'
+        effect='fade'
+        className='w-full h-[45rem] xl:h-[55rem] mySwiper'
+        modules={[Pagination, EffectFade]}
+        pagination={{
+          clickable: true,
+          renderBullet(_, className) {
+            return (`
+              <span class='${className}' style='border:1px solid #fff;margin-right:1rem;width:.65rem;height:0.65rem;'>
+              </span>
           `)
-        }
-      }}
-    >
-      <SwiperSlide>
-        <CarouselImage image="bg-[url('/coffee.webp')]" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CarouselImage image="bg-[url('/cafe.webp')]" />
-      </SwiperSlide>
-    </Swiper>
+          }
+        }}
+      >
+        <SwiperSlide>
+          <CarouselImage image="bg-[url('/coffee.webp')]" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselImage image="bg-[url('/cafe.webp')]" />
+        </SwiperSlide>
+      </Swiper>
+    </header>
   )
 }
