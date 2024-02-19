@@ -10,7 +10,7 @@
   position: absolute;
   z-index: 30;
   width: .15rem;
-  background-color: #8F7838;
+  background-color: #9a8039;
   height: 4.8rem;
   opacity: 0;
 }
@@ -18,16 +18,16 @@
 .welcome::before {
   top: 120%;
   transform: translateY(-2rem);
-  animation: lineAnimation 1s forwards;
-  animation-delay: 0.4s;
+  animation: lineAnimation 1.4s forwards;
+  animation-delay: 0.8s;
   animation-name: lineAnimation;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
 .welcome::after {
   bottom: 120%;
-  transform: translateY(1.5rem);
+  transform: translateY(1.2rem);
   animation-name: lineAnimation;
-  animation-duration: 1s;
+  animation-duration: 2.3s;
   animation-fill-mode: forwards;
 }

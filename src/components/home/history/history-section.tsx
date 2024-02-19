@@ -5,14 +5,14 @@ import Image from 'next/image'
 
 export const History = () => {
   return (
-    <section className='bg-neutral-950 p-24 flex justify-center relative overflow-hidden'>
+    <section id='history' className='bg-neutral-950 p-24 flex justify-center relative overflow-hidden'>
       <div className='max-w-3xl mx-auto text-center'>
         <Subtitle>
           ESTD. 2022
         </Subtitle>
-        <h2 className='text-white text-3xl my-4'>The History</h2>
+        <h2 className='text-white text-3xl my-4'>La Historia</h2>
         <Text>
-          Years ago, in a town surrounded by mountains, Martin Steven, a passionate coffee lover, discovered a remote plantation with exceptional beans. With determination, he perfected roasting and formed "Mountain Coffee," committed to quality and community. Since then, each cup tells the story of high peaks and warm encounters, creating a unique experience of aromas and friendship. Welcome to Mountain Coffee, where coffee turns into unforgettable moments!
+          Hace años, en un pueblo rodeado de montañas, Martin Steven, un apasionado amante del café, descubrió una plantación remota con granos excepcionales. Con determinación, perfeccionó el tostado y creó "Espresso", comprometido con la calidad y la comunidad. Desde entonces, cada taza cuenta la historia de altas cumbres y cálidos encuentros, creando una experiencia única de aromas y amistad. ¡Bienvenido a Espresso, donde el café se convierte en momentos inolvidables!
         </Text>
         <Sign />
       </div>
@@ -20,6 +20,7 @@ export const History = () => {
         src={'/history.png'}
         width={350}
         height={220}
+        loading='lazy'
         className='absolute left-[-6rem] bottom-[-7rem]'
         alt='Coffee'
       />

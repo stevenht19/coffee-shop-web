@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   display: flex;
   flex-direction: column;
@@ -13,8 +12,4 @@ body {
 
 h1, h2 {
   font-family: var(--font-playfair);
-}
-
-:root {
-  --swiper-theme-color: #fff !important;
 }

@@ -8,13 +8,18 @@ import 'swiper/css/pagination'
 import 'swiper/css/effect-fade'
 
 export const Caroucel: React.FC = () => {
+
   return (
     <header>
       <Swiper
-        color='red'
+        loop={true}
+        lazyPreloadPrevNext={2}
+        style={{
+          '--swiper-theme-color': '#fff'
+        } as any}
         direction='vertical'
         effect='fade'
-        className='w-full h-[45rem] xl:h-[55rem] mySwiper'
+        className='w-full h-[45rem] xl:h-[55rem] 2xl:h-[65rem] mySwiper'
         modules={[Pagination, EffectFade]}
         pagination={{
           clickable: true,
@@ -27,10 +32,13 @@ export const Caroucel: React.FC = () => {
         }}
       >
         <SwiperSlide>
-          <CarouselImage image="bg-[url('/coffee.webp')]" />
+          <CarouselImage title='Buen Café y Momentos' image="bg-[url('/coffee.webp')]" />
         </SwiperSlide>
         <SwiperSlide>
-          <CarouselImage image="bg-[url('/cafe.webp')]" />
+          <CarouselImage title='Buen Café Y Una Sonrisa' image="bg-[url('/coffee.jpg')]" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CarouselImage title='Calidad y momentos' image="bg-[url('/cafe.webp')]" />
         </SwiperSlide>
       </Swiper>
     </header>

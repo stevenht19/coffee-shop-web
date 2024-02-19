@@ -24,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`${playfair.variable} ${sans.variable}`}>
+    <html lang='en'>
+      <body className={`${playfair.variable} ${sans.variable}`} suppressHydrationWarning>
         {children}
         <Footer />
       </body>

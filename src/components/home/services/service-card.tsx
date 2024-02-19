@@ -2,10 +2,16 @@ import { Text } from '@components/ui/paragraph'
 
 type ServiceCardProps = {
   icon: React.ReactNode
+  text: string
+  title: string
+  reason: string
 }
 
 export const Service: React.FC<ServiceCardProps> = ({
-  icon
+  icon,
+  text,
+  title,
+  reason
 }) => {
   return (
     <article className='rounded pt-3 pb-6 px-8 xl:px-4 bg-[#111111] shadow-xl'>
@@ -14,10 +20,10 @@ export const Service: React.FC<ServiceCardProps> = ({
           {icon}
         </figcaption>
       </figure>
-      <h3 className='text-primary'>WHY CHOOSE US?</h3>
-      <p className='mt-2 text-neutral-300 font-thin mb-4'>Because we are reliable</p>
+      <h3 className='text-primary'>{title}</h3>
+      <p className='mt-2 text-neutral-300 font-thin mb-4'>{reason}</p>
       <Text>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa veniam fuga animi repudiandae, dolore blanditiis, iste quaerat neque dicta.
+        {text}
       </Text>
     </article>
   )
