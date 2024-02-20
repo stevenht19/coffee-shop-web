@@ -2,6 +2,7 @@ import { Subtitle } from '@components/ui/subtitle'
 import { IoIosArrowDown } from 'react-icons/io'
 import { useSwiper } from 'swiper/react'
 import style from './style.module.css'
+import { cn } from '@lib/cn'
 
 type CarouselImageProps = {
   title?: string
@@ -21,7 +22,10 @@ export const CarouselImage: React.FC<CarouselImageProps> = ({
   return (
     <section className={`before:bg-black/70 before:absolute before:inset-0 before:z-10 h-full bg-cover bg-neutral-950 ${image}`}>
       <div className='grid place-content-center w-full h-full pt-20'>
-        <div className={`${style.welcome} max-w-xs lg:max-w-sm z-20 text-center relative`}>
+        <div className={cn(
+          'max-w-xs lg:max-w-sm z-20 text-center relative',
+          style.welcome
+        )}>
           <Subtitle>
             BIENVENIDO A ESPRESSO
           </Subtitle>

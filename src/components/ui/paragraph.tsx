@@ -1,3 +1,5 @@
+import { cn } from '@lib/cn'
+
 export const Text = ({
   type,
   children
@@ -5,17 +7,11 @@ export const Text = ({
   type?: 'sm'
   children: React.ReactNode
 }) => {
-
-  if (type === 'sm') {
-    return (
-      <p className='text-neutral-200 py-2 font-light tracking-wider leading-8 text-sm'>
-        {children}
-      </p>
-    )
-  }
-
   return (
-    <p className='text-neutral-200 py-2 font-light tracking-wider leading-8'>
+    <p className={cn(
+      'text-neutral-200 py-2 font-light tracking-wider leading-8',
+      type === 'sm' && 'text-sm'
+    )}>
       {children}
     </p>
   )

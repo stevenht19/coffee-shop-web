@@ -2,8 +2,8 @@ import { Products } from '@components/menu/products'
 import { Sidebar } from '@components/menu/sidebar'
 import { performRequest } from '@lib/datocms'
 import { Category } from '@models/Category'
-import { getCategoriesByType } from './utils'
 import { CategoriesType } from '@consts/categories'
+import { getCategoriesByType } from './utils'
 
 const MENU_CATEGORY_QUERY = `
 {
