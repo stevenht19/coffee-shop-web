@@ -17,7 +17,7 @@
 
 .welcome::before {
   top: 120%;
-  transform: translateY(-2rem);
+  transform: translateY(-1.4rem);
   animation: lineAnimation 1.4s forwards;
   animation-delay: 0.8s;
   animation-name: lineAnimation;

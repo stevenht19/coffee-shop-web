@@ -8,7 +8,7 @@ type MenuProps = {
 
 export const ListOfMenu: React.FC = () => {
   return (
-    <ul className='grid grid-cols-2 mt-16 gap-16'>
+    <ul className='grid md:grid-cols-2 mt-16 gap-16'>
       {menus.map((menu) => (
         <Menu {...menu} />
       ))}

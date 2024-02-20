@@ -1,5 +1,4 @@
-import { Navbar } from '@components/home/banner'
-import { Sidebar } from '@components/menu/sidebar'
+import { Navbar } from '@layout/navbar'
 
 export default function Layout({
   children
@@ -7,13 +6,8 @@ export default function Layout({
   children: React.ReactNode
 }) {
   return <>
-    <header>
-      <Navbar />
-    </header>
-    <section
-      className='max-w-6xl mt-10 mx-auto grid gap-16 grid-cols-auto'
-    >
-      <Sidebar />
+    <Navbar as='header' />
+    <section className='max-w-6xl mt-12 mx-auto grid gap-20 grid-cols-auto'>
       {children}
     </section>
   </>

@@ -27,6 +27,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${playfair.variable} ${sans.variable}`} suppressHydrationWarning>
         {children}
+        <div id='portal'></div>
         <Footer />
       </body>
     </html>

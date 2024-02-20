@@ -7,10 +7,12 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-fade'
 
-export const Caroucel: React.FC = () => {
-
+export const Caroucel= ({ children }: {
+  children: React.ReactNode
+}) => {
   return (
     <header>
+      {children}
       <Swiper
         loop={true}
         lazyPreloadPrevNext={2}
@@ -35,7 +37,7 @@ export const Caroucel: React.FC = () => {
           <CarouselImage title='Buen Café y Momentos' image="bg-[url('/coffee.webp')]" />
         </SwiperSlide>
         <SwiperSlide>
-          <CarouselImage title='Buen Café Y Una Sonrisa' image="bg-[url('/coffee.jpg')]" />
+          <CarouselImage title='Buen Café Y Una Sonrisa' image="bg-[url('/coffeeshop.webp')]" />
         </SwiperSlide>
         <SwiperSlide>
           <CarouselImage title='Calidad y momentos' image="bg-[url('/cafe.webp')]" />
