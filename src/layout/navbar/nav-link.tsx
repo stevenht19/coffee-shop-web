@@ -7,7 +7,7 @@ type NavLinkProps = LinkProps & {
 export const NavLink: React.FC<NavLinkProps> = (props) => {
   return (
     <li>
-      <Link {...props} className='p-1 hover:text-gray-200'>
+      <Link {...props} className='p-1 hover:text-primary'>
         {props.children}
       </Link>
     </li>

@@ -2,11 +2,11 @@
 
 import { IoClose } from 'react-icons/io5'
 import { RiMenuFill } from 'react-icons/ri'
+import { cn } from '@lib/cn'
 import { Logo } from '@components/ui/logo'
 import { useBoolean } from '@hooks/use-boolean'
 import { NavLink } from './nav-link'
 import Link from 'next/link'
-import { cn } from '@lib/cn'
 
 export const Navigation = () => {
   const [open, setOpen] = useBoolean()
@@ -26,7 +26,7 @@ export const Navigation = () => {
         </button>
       </div>
       <div className={cn(
-        'md:flex flex-col px-5 md:gap-0 md:flex-row justify-between md:items-center max-w-4xl mx-auto w-full text-gray-100 md:uppercase',
+        'md:flex flex-col md:gap-0 md:flex-row justify-between md:items-center max-w-4xl lg:max-w-6xl px-6 mx-auto w-full text-neutral-100 md:uppercase',
         open ? 'flex flex-col gap-10 md:before:hidden before:fixed before:inset-0 before:backdrop-blur-xl' : 'hidden'
       )}>
         <ul className='flex flex-col md:flex-row gap-10 order-2 mt-12 md:order-none md:mt-0 z-40'>
@@ -45,7 +45,7 @@ export const Navigation = () => {
         </Link>
         <ul className='flex flex-col md:flex-row gap-10 order-3 md:mt-0 z-40'>
           <NavLink href={'/menu'}>
-            Menu
+            Menú
           </NavLink>
           <NavLink href={'/'}>
             Delivery

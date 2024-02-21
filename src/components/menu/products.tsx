@@ -1,12 +1,18 @@
+import { Product } from '@models/Product'
 import { ProductCard } from './product-card'
+import { Results } from './results'
 
-export const Products = () => {
+type ProductProps = {
+  products: Product[]
+}
+
+export const Products: React.FC<ProductProps> = ({ products }) => {
   return (
-    <section className='grid grid-cols-1 lg:grid-cols-2 gap-5 pb-24 pr-5'>
-      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-        	.map(() => (
-            <ProductCard />
-      ))}
-    </section>
+    <Results>
+      {products
+        .map((product, i) => (
+          <ProductCard key={i} {...product} />
+        ))}
+    </Results>
   )
 }

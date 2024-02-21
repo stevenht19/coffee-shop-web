@@ -7,7 +7,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-fade'
 
-export const Caroucel= ({ children }: {
+export const Caroucel = ({ children }: {
   children: React.ReactNode
 }) => {
   return (

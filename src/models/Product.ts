@@ -1,10 +1,9 @@
 import { DatoImage } from '@shared/dato-image'
 
-export interface Category {
-  id: number
+export interface Product {
   name: string
+  price: number
   slug: string
-  categoryType: string
-  categoryDescription: string
+  text: string
   image: DatoImage
 }

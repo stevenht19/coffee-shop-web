@@ -1,3 +1,4 @@
+import { Sidebar } from '@components/menu/sidebar'
 import { Navbar } from '@layout/navbar/navbar'
 
 export default function Layout({
@@ -5,9 +6,11 @@ export default function Layout({
 }: {
   children: React.ReactNode
 }) {
+  
   return <>
     <Navbar as='header' static />
-    <section className='max-w-6xl mt-12 mx-auto grid gap-20 grid-cols-auto'>
+    <section className='max-w-6xl mt-12 mx-auto grid gap-10 md:gap-20 sm:grid-cols-auto w-full'>
+      <Sidebar />
       {children}
     </section>
   </>

@@ -9,6 +9,28 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        fadeIn: {
+          from: {
+            opacity: '0'
+          }, to: {
+            opacity: '1',
+          }
+        },
+        fadeInDown: {
+          from: {
+            transform: 'translateY(-1rem)',
+            opacity: '0'
+          },
+          to: {
+            opacity: '1'
+          }
+        }
+      },
+      animation: {
+        fadeIn: 'fadeInDown 0.4s ease',
+        fadeInDown: 'fadeInDown 0.9s ease'
+      },
       colors: {
         'primary': '#9a8039'
       },
